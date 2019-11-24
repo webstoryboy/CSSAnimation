@@ -1,0 +1,201 @@
+<style>
+
+.block.ske1 > div {background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%); transition: all .3s ease;}
+.block.ske1 > div:hover {transform: none;}
+.skew01 {transform: skew(10deg, 10deg)}
+.skew02 {transform: skew(20deg, 20deg)}
+.skew03 {transform: skew(30deg, 30deg)}
+.skew04 {transform: skew(40deg, 40deg)}
+.skew05 {transform: skew(50deg, 50deg)}
+.skew06 {transform: skewX(10deg)}
+.skew07 {transform: skewX(20deg)}
+.skew08 {transform: skewX(30deg)}
+.skew09 {transform: skewX(40deg)}
+.skew10 {transform: skewX(50deg)}
+.skew11 {transform: skewY(10deg)}
+.skew12 {transform: skewY(20deg)}
+.skew13 {transform: skewY(30deg)}
+.skew14 {transform: skewY(40deg)}
+.skew15 {transform: skewY(50deg)}
+        
+    
+    </style>    
+    
+    
+    
+    
+    
+
+<h2>Skew</h2>
+<p>translate</p>
+<hr>
+
+<h3>기울기(skew)</h3>
+
+
+<h4 class="pt50">기울기(skew)</h4>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+        <colgroup>
+            <col style="width: 20%">
+            <col style="width: 30%">
+            <col style="width: 50%">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">속성값</th>
+                <th scope="col">예시</th>
+                <th scope="col">설명</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>skew(x-angle,y-angle)</th>
+                <td>transform: skew(10deg, 10deg);</td>
+                <td>X좌표, Y좌표 기울기를 나태냅니다.</td>
+            </tr>
+            <tr>
+                <th>skewX(angle)</th>
+                <td>transform: skewX(10deg);</td>
+                <td>X좌표 기울기를 나태냅니다.</td>
+            </tr>
+            <tr>
+                <th>skewY(angle)</th>
+                <td>transform: skewY(10deg);</td>
+                <td>Y좌표 기울기를 나태냅니다.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Sample1 -->
+<h4 class="pt50">Sample1</h4>
+<p>skew를 이용한 기울기 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <div class="well clearfix">
+                <div class="block ske1">
+                    <div class="skew01">skew01</div>
+                </div>
+                <div class="block ske1">
+                    <div class="skew02">skew02</div>
+                </div>
+                <div class="block ske1">
+                    <div class="skew03">skew03</div>
+                </div>
+                <div class="block ske1">
+                    <div class="skew04">skew04</div>
+                </div>
+                <div class="block ske1">
+                    <div class="skew05">skew05</div>
+                </div>
+            </div>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-css">.skew01 {transform: skew(10deg, 10deg);}
+.skew02 {transform: skew(20deg, 20deg);}
+.skew03 {transform: skew(30deg, 30deg);}
+.skew04 {transform: skew(40deg, 40deg);}
+.skew05 {transform: skew(50deg, 50deg);}
+</code></pre>
+    </div>
+</div>
+<!-- sample1 -->
+
+
+
+<!-- Sample2 -->
+<h4 class="pt50">Sample2</h4>
+<p>skew X축을 이용한 기울기 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <div class="well clearfix">
+                <div class="block ske1">
+                    <div class="skew06">skew06</div>
+                </div>
+                <div class="block ske1">
+                    <div class="skew07">skew07</div>
+                </div>
+                <div class="block ske1">
+                    <div class="skew08">skew08</div>
+                </div>
+                <div class="block ske1">
+                    <div class="skew09">skew09</div>
+                </div>
+                <div class="block ske1">
+                    <div class="skew10">skew10</div>
+                </div>
+            </div>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-css">.skew06 {transform: skewX(10deg);}
+.skew07 {transform: skewX(20deg);}
+.skew08 {transform: skewX(30deg);}
+.skew09 {transform: skewX(40deg);}
+.skew10 {transform: skewX(50deg);}
+</code></pre>
+    </div>
+</div>
+<!-- sample2 -->
+
+
+<!-- Sample3 -->
+<h4 class="pt50">Sample3</h4>
+<p>skew Y축을 이용한 기울기 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <div class="well clearfix">
+                <div class="block ske1">
+                    <div class="skew11">skew11</div>
+                </div>
+                <div class="block ske1">
+                    <div class="skew12">skew12</div>
+                </div>
+                <div class="block ske1">
+                    <div class="skew13">skew13</div>
+                </div>
+                <div class="block ske1">
+                    <div class="skew14">skew14</div>
+                </div>
+                <div class="block ske1">
+                    <div class="skew15">skew15</div>
+                </div>
+            </div>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-css">.skew11 {transform: skewY(10deg);}
+.skew12 {transform: skewY(20deg);}
+.skew13 {transform: skewY(30deg);}
+.skew14 {transform: skewY(40deg);}
+.skew15 {transform: skewY(50deg);}
+</code></pre>
+    </div>
+</div>
+<!-- sample3 -->

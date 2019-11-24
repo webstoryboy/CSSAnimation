@@ -1,0 +1,315 @@
+<style>
+
+    .block.tra1 > div {background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);transition: all 0.3s ease;}
+    .block.tra1 > div:hover {transform: none;}
+        
+    .translate01 {transform: translate(10px, 10px);}
+    .translate02 {transform: translate(20px, 20px);}
+    .translate03 {transform: translate(30px, 30px);}
+    .translate04 {transform: translate(40px, 40px);}
+    .translate05 {transform: translate(50px, 50px);}
+    .translate06 {transform: translateX(10px); opacity: .6}
+    .translate07 {transform: translateX(20px); opacity: .6}
+    .translate08 {transform: translateX(30px); opacity: .6}
+    .translate09 {transform: translateX(40px); opacity: .6}
+    .translate10 {transform: translateX(50px); opacity: .6}
+    .translate11 {transform: translateY(10px); opacity: .6}
+    .translate12 {transform: translateY(20px); opacity: .6}
+    .translate13 {transform: translateY(30px); opacity: .6}
+    .translate14 {transform: translateY(40px); opacity: .6}
+    .translate15 {transform: translateY(50px); opacity: .6}
+    .translate16 {transform: translateZ(10px); opacity: .6;}
+    .translate17 {transform: translateZ(20px); opacity: .6;}
+    .translate18 {transform: translateZ(30px); opacity: .6;}
+    .translate19 {transform: translateZ(40px); opacity: .6;}
+    .translate20 {transform: translateZ(50px); opacity: .6;}
+    .translate21 {transform: translateZ(-10px); opacity: .6;}
+    .translate22 {transform: translateZ(-30px); opacity: .6;}
+    .translate23 {transform: translateZ(-50px); opacity: .6;}
+    .translate24 {transform: translateZ(-70px); opacity: .6;}
+    .translate25 {transform: translateZ(-90px); opacity: .6;}
+
+</style>    
+
+
+
+
+
+
+<h2>translate</h2>
+<p>translate</p>
+<hr>
+
+<h3>translate</h3>
+
+
+<h4 class="pt50">이동(translate)</h4>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+        <colgroup>
+            <col style="width: 20%">
+            <col style="width: 30%">
+            <col style="width: 50%">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">속성값</th>
+                <th scope="col">예시</th>
+                <th scope="col">설명</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>translate(x,y)</th>
+                <td>transform: translate(10px, 20px);</td>
+                <td>X좌표, Y좌표 이동을 나태냅니다.</td>
+            </tr>
+            <tr>
+                <th>translate3d(x,y,z)</th>
+                <td>transform: translate3d(10px, 20px, 30px);</td>
+                <td>X좌표, Y좌표, Z좌표 이동을 나태냅니다.</td>
+            </tr>
+            <tr>
+                <th>translateX(x)</th>
+                <td>transform: translateX(10px);</td>
+                <td>X좌표 이동을 나태냅니다.</td>
+            </tr>
+            <tr>
+                <th>translateY(y)</th>
+                <td>transform: translateY(10px);</td>
+                <td>Y좌표 이동을 나태냅니다.</td>
+            </tr>
+            <tr>
+                <th>translateZ(z)</th>
+                <td>transform: translateZ(10px);</td>
+                <td>Z좌표 이동을 나태냅니다.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Sample1 -->
+<h4 class="pt50">Sample1</h4>
+<p>translate의 값을 표현한 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+           <div class="well clearfix">
+                <div class="block tra1">
+                    <div class="translate01">translate01</div>
+                </div>
+                <div class="block tra1">
+                    <div class="translate02">translate02</div>
+                </div>
+                <div class="block tra1">
+                    <div class="translate03">translate03</div>
+                </div>
+                <div class="block tra1">
+                    <div class="translate04">translate04</div>
+                </div>
+                <div class="block tra1">
+                    <div class="translate05">translate05</div>
+                </div>
+            </div>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-css">.translate01 {transform: translate(10px, 10px);}
+.translate02 {transform: translate(20px, 20px);}
+.translate03 {transform: translate(30px, 30px);}
+.translate04 {transform: translate(40px, 40px);}
+.translate05 {transform: translate(50px, 50px);}
+</code></pre>
+    </div>
+</div>
+<!-- sample1 -->
+
+
+<!-- Sample2 -->
+<h4 class="pt50">Sample2</h4>
+<p>translateX의 값을 표현한 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <div class="well clearfix">
+                <div class="block tra1">
+                    <div class="translate06">translate06</div>
+                </div>
+                <div class="block tra1">
+                    <div class="translate07">translate07</div>
+                </div>
+                <div class="block tra1">
+                    <div class="translate08">translate08</div>
+                </div>
+                <div class="block tra1">
+                    <div class="translate09">translate09</div>
+                </div>
+                <div class="block tra1">
+                    <div class="translate10">translate10</div>
+                </div>
+            </div>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-css">.translate06 {transform: translateX(10px);}
+.translate07 {transform: translateX(20px);}
+.translate08 {transform: translateX(30px);}
+.translate09 {transform: translateX(40px);}
+.translate10 {transform: translateX(50px);}
+</code></pre>
+    </div>
+</div>
+<!-- sample2 -->
+
+
+
+
+<!-- Sample3 -->
+<h4 class="pt50">Sample3</h4>
+<p>translateY의 값을 표현한 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <div class="well clearfix">
+                <div class="block tra1">
+                    <div class="translate11">translate11</div>
+                </div>
+                <div class="block tra1">
+                    <div class="translate12">translate12</div>
+                </div>
+                <div class="block tra1">
+                    <div class="translate13">translate13</div>
+                </div>
+                <div class="block tra1">
+                    <div class="translate14">translate14</div>
+                </div>
+                <div class="block tra1">
+                    <div class="translate15">translate15</div>
+                </div>
+            </div>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-css">.translate11 {transform: translateY(10px);}
+.translate12 {transform: translateY(20px);}
+.translate13 {transform: translateY(30px);}
+.translate14 {transform: translateY(40px);}
+.translate15 {transform: translateY(50px);}
+</code></pre>
+    </div>
+</div>
+<!-- sample3 -->
+
+
+
+
+<!-- Sample4 -->
+<h4 class="pt50">Sample4</h4>
+<p>translateZ의 값을 표현한 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <div class="well clearfix">
+                <div class="block tra1">
+                    <div class="translate16">translate16</div>
+                </div>
+                <div class="block tra1">
+                    <div class="translate17">translate17</div>
+                </div>
+                <div class="block tra1">
+                    <div class="translate18">translate18</div>
+                </div>
+                <div class="block tra1">
+                    <div class="translate19">translate19</div>
+                </div>
+                <div class="block tra1">
+                    <div class="translate20">translate20</div>
+                </div>
+            </div>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-css">.translate16 {transform: translateZ(10px); opacity: .6;}
+.translate17 {transform: translateZ(20px); opacity: .6;}
+.translate18 {transform: translateZ(30px); opacity: .6;}
+.translate19 {transform: translateZ(40px); opacity: .6;}
+.translate20 {transform: translateZ(50px); opacity: .6;}
+</code></pre>
+    </div>
+</div>
+<!-- sample4 -->
+
+
+<!-- Sample5 -->
+<h4 class="pt50">Sample5</h4>
+<p>translateZ의 -값을 표현한 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <div class="well clearfix">
+                <div class="block tra1">
+                    <div class="translate21">translate21</div>
+                </div>
+                <div class="block tra1">
+                    <div class="translate22">translate22</div>
+                </div>
+                <div class="block tra1">
+                    <div class="translate23">translate23</div>
+                </div>
+                <div class="block tra1">
+                    <div class="translate24">translate24</div>
+                </div>
+                <div class="block tra1">
+                    <div class="translate25">translate25</div>
+                </div>
+            </div>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-css">.translate21 {transform: translateZ(-10px); opacity: .6;}
+.translate22 {transform: translateZ(-30px); opacity: .6;}
+.translate23 {transform: translateZ(-50px); opacity: .6;}
+.translate24 {transform: translateZ(-70px); opacity: .6;}
+.translate25 {transform: translateZ(-90px); opacity: .6;}
+</code></pre>
+    </div>
+</div>
+<!-- sample5 -->
+    
+ 
+    

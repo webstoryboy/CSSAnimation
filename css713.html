@@ -1,0 +1,677 @@
+<style>
+
+.block.ori > div {background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); transition: all 0.35s ease-in-out;}
+.block.ori > div:hover {transform: none}
+
+.origin1 {transform: rotate(10deg); transform-origin: 0% 0%;}
+.origin2 {transform: rotate(20deg); transform-origin: 0% 0%;}
+.origin3 {transform: rotate(30deg); transform-origin: 0% 0%;}
+.origin4 {transform: rotate(40deg); transform-origin: 0% 0%;}
+.origin5 {transform: rotate(50deg); transform-origin: 0% 0%;}
+
+.origin6 {transform: rotate(10deg); transform-origin: 100% 100%;}
+.origin7 {transform: rotate(20deg); transform-origin: 100% 100%;}
+.origin8 {transform: rotate(30deg); transform-origin: 100% 100%;}
+.origin9 {transform: rotate(40deg); transform-origin: 100% 100%;}
+.origin10 {transform: rotate(50deg); transform-origin: 100% 100%;}
+
+.origin11 {transform: rotate(10deg); transform-origin: 100% 0;}
+.origin12 {transform: rotate(20deg); transform-origin: 100% 0;}
+.origin13 {transform: rotate(30deg); transform-origin: 100% 0;}
+.origin14 {transform: rotate(40deg); transform-origin: 100% 0;}
+.origin15 {transform: rotate(50deg); transform-origin: 100% 0;}
+
+.origin16 {transform: rotate(10deg); transform-origin: 0 100%;}
+.origin17 {transform: rotate(20deg); transform-origin: 0 100%;}
+.origin18 {transform: rotate(30deg); transform-origin: 0 100%;}
+.origin19 {transform: rotate(40deg); transform-origin: 0 100%;}
+.origin20 {transform: rotate(50deg); transform-origin: 0 100%;}
+
+.origin21 {transform: rotate3d(1,0,0,60deg); transform-origin: 20% 0%;}
+.origin22 {transform: rotate3d(1,0,0,60deg); transform-origin: 20% 25%;}
+.origin23 {transform: rotate3d(1,0,0,60deg); transform-origin: 20% 50%;}
+.origin24 {transform: rotate3d(1,0,0,60deg); transform-origin: 20% 75%;}
+.origin25 {transform: rotate3d(1,0,0,60deg); transform-origin: 20% 100%;}
+
+.origin26 {transform: rotate3d(1,0,0,-60deg); transform-origin: 20% 0%;}
+.origin27 {transform: rotate3d(1,0,0,-60deg); transform-origin: 20% 25%; }
+.origin28 {transform: rotate3d(1,0,0,-60deg); transform-origin: 20% 50%; }
+.origin29 {transform: rotate3d(1,0,0,-60deg); transform-origin: 20% 75%; }
+.origin30 {transform: rotate3d(1,0,0,-60deg); transform-origin: 20% 100%; }
+
+.origin31 {transform: rotate3d(0,1,0,10deg); transform-origin:100% 100%; }
+.origin32 {transform: rotate3d(0,1,0,20deg); transform-origin:100% 100%; }
+.origin33 {transform: rotate3d(0,1,0,30deg); transform-origin:100% 100%; }
+.origin34 {transform: rotate3d(0,1,0,40deg); transform-origin:100% 100%; }
+.origin35 {transform: rotate3d(0,1,0,50deg); transform-origin:100% 100%; }
+
+.origin36 {transform: rotate3d(0,1,0,-10deg); transform-origin:100% 100%; }
+.origin37 {transform: rotate3d(0,1,0,-20deg); transform-origin:100% 100%; }
+.origin38 {transform: rotate3d(0,1,0,-30deg); transform-origin:100% 100%; }
+.origin39 {transform: rotate3d(0,1,0,-40deg); transform-origin:100% 100%; }
+.origin40 {transform: rotate3d(0,1,0,-50deg); transform-origin:100% 100%; }
+
+.origin41 {transform: rotate3d(0,1,0,10deg); transform-origin:0% 0%; }
+.origin42 {transform: rotate3d(0,1,0,20deg); transform-origin:0% 0%; }
+.origin43 {transform: rotate3d(0,1,0,30deg); transform-origin:0% 0%; }
+.origin44 {transform: rotate3d(0,1,0,40deg); transform-origin:0% 0%; }
+.origin45 {transform: rotate3d(0,1,0,50deg); transform-origin:0% 0%; }
+
+.origin46 {transform: rotate3d(0,1,0,-10deg); transform-origin:0% 0%; }
+.origin47 {transform: rotate3d(0,1,0,-20deg); transform-origin:0% 0%; }
+.origin48 {transform: rotate3d(0,1,0,-30deg); transform-origin:0% 0%; }
+.origin49 {transform: rotate3d(0,1,0,-40deg); transform-origin:0% 0%; }
+.origin50 {transform: rotate3d(0,1,0,-50deg); transform-origin:0% 0%; }
+</style>
+
+
+
+
+<h2>transform-origin</h2>
+<p>transform-origin 속성은 요소의 움직임 방향 및 기준점을 설정합니다. transform 속성과 같이 설정하며 기준점에 따라 애니메이션의 방향을 설정 할 수 있습니다.</p>
+
+<hr>
+
+<h3>transform-origin</h3>
+<p class="blue">transform-origin 요소의 움직임 방향을 정의합니다.</p>
+
+<div class="table-responsive">
+	<table class="table table-bordered table-striped table-hover">
+		<colgroup>
+			<col style="width: 30%">
+			<col style="width: 70%">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">특징</th>
+				<th scope="col">설명</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row"><a href="http://webzz.tistory.com/360">기본 값</a></th>
+				<td><a href="http://webzz.tistory.com/360">transform-origin : 50% 50% 0</a></td>
+			</tr>
+			<tr>
+				<th scope="row"><a href="http://webzz.tistory.com/360">상속</a></th>
+				<td><a href="http://webzz.tistory.com/360">안됨</a></td>
+			</tr>
+			<tr>
+				<th scope="row"><a href="http://webzz.tistory.com/360">애니메이션</a></th>
+				<td><a href="http://webzz.tistory.com/360">가능</a></td>
+			</tr>
+			<tr>
+				<th scope="row"><a href="http://webzz.tistory.com/360">적용</a></th>
+				<td><a href="http://webzz.tistory.com/360">transform</a></td>
+			</tr>
+			<tr>
+				<th scope="row"><a href="http://webzz.tistory.com/359">버전</a></th>
+				<td><a href="http://webzz.tistory.com/359">CSS3</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<h4 class="pt50">정의(Definition)</h4>
+<ul>
+	<li>transform-origin 속성은 요소의 움직임 방향을 정의합니다.</li>
+</ul>
+	
+	
+	
+<h4 class="pt50">문법(Syntax)</h4>
+<p class="blue">transform-origin : x-axis | y-axis | z-axis</p>
+
+
+
+
+<h4 class="pt50">속성(Property)</h4>
+<div class="table-responsive">
+	<table class="table table-bordered table-striped table-hover">
+		<colgroup>
+			<col style="width: 30%">
+			<col style="width: 70%">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">속성값</th>
+				<th scope="col">설명</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>x-axis</th>
+				<td>transform X축 방향을 설정합니다.<br />
+					- left<br />
+					- center<br />
+					- right<br />
+					- length<br />
+					- %
+				</td>
+			</tr>
+			<tr>
+				<th>y-axis</th>
+				<td>transform Y축 방향을 설정합니다.<br />
+					- left<br />
+					- center<br />
+					- right<br />
+					- length<br />
+					- %
+				</td>
+			</tr>
+			<tr>
+				<th>z-axis</th>
+				<td>transform Z축 방향을 설정합니다.<br />
+					- left<br />
+					- center<br />
+					- right<br />
+					- length<br />
+					- %
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+	
+	
+	
+<!-- Sample1 -->
+<h4 class="pt50">Sample1</h4>
+<p>요소의 회전에 따른 기준점을 %로 설정한 예제입니다.</p>
+<div class="sample">
+	<h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+	<div class="ex">
+		<!-- ex -->
+		<div class="none">
+			<div class="well clearfix">
+				<div class="block ori">
+					<div class="origin1">origin1</div>
+				</div>
+				<div class="block ori">
+					<div class="origin2">origin2</div>
+				</div>
+				<div class="block ori">
+					<div class="origin3">origin3</div>
+				</div>
+				<div class="block ori">
+					<div class="origin4">origin4</div>
+				</div>
+				<div class="block ori">
+					<div class="origin5">origin5</div>
+				</div>
+			</div>
+		</div>
+		<!-- ex -->
+	</div>
+</div>
+
+<div class="sample">
+	<h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+	<div class="html">
+<pre class="line-numbers"><code class="language-css">.origin1 {transform: rotate(10deg); transform-origin: 0% 0%;}
+.origin2 {transform: rotate(20deg); transform-origin: 0% 0%;}
+.origin3 {transform: rotate(30deg); transform-origin: 0% 0%;}
+.origin4 {transform: rotate(40deg); transform-origin: 0% 0%;}
+.origin5 {transform: rotate(50deg); transform-origin: 0% 0%;}
+</code></pre>
+	</div>
+</div>
+<!-- sample1 -->
+	
+	
+<!-- Sample2 -->
+<h4 class="pt50">Sample2</h4>
+<p>요소의 회전에 따른 기준점을 %로 설정한 예제입니다.</p>
+<div class="sample">
+	<h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+	<div class="ex">
+		<!-- ex -->
+		<div class="none">
+			<div class="well clearfix">
+				<div class="block ori">
+					<div class="origin6">origin6</div>
+				</div>
+				<div class="block ori">
+					<div class="origin7">origin7</div>
+				</div>
+				<div class="block ori">
+					<div class="origin8">origin8</div>
+				</div>
+				<div class="block ori">
+					<div class="origin9">origin9</div>
+				</div>
+				<div class="block ori">
+					<div class="origin10">origin10</div>
+				</div>
+			</div>
+		</div>
+		<!-- ex -->
+	</div>
+</div>
+
+<div class="sample">
+	<h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+	<div class="html">
+<pre class="line-numbers"><code class="language-css">.origin6 {transform: rotate(10deg); transform-origin: 100% 100%;}
+.origin7 {transform: rotate(20deg); transform-origin: 100% 100%;}
+.origin8 {transform: rotate(30deg); transform-origin: 100% 100%;}
+.origin9 {transform: rotate(40deg); transform-origin: 100% 100%;}
+.origin10 {transform: rotate(50deg); transform-origin: 100% 100%;}
+</code></pre>
+	</div>
+</div>
+<!-- sample2 -->
+	
+	
+<!-- Sample3 -->
+<h4 class="pt50">Sample3</h4>
+<p>요소의 회전에 따른 기준점을 %로 설정한 예제입니다.</p>
+<div class="sample">
+	<h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+	<div class="ex">
+		<!-- ex -->
+		<div class="none">
+			<div class="well clearfix">
+				<div class="block ori">
+					<div class="origin11">origin11</div>
+				</div>
+				<div class="block ori">
+					<div class="origin12">origin12</div>
+				</div>
+				<div class="block ori">
+					<div class="origin13">origin13</div>
+				</div>
+				<div class="block ori">
+					<div class="origin14">origin14</div>
+				</div>
+				<div class="block ori">
+					<div class="origin15">origin15</div>
+				</div>
+			</div>
+		</div>
+		<!-- ex -->
+	</div>
+</div>
+
+<div class="sample">
+	<h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+	<div class="html">
+<pre class="line-numbers"><code class="language-css">.origin11 {transform: rotate(10deg); transform-origin: 100% 0;}
+.origin12 {transform: rotate(20deg); transform-origin: 100% 0;}
+.origin13 {transform: rotate(30deg); transform-origin: 100% 0;}
+.origin14 {transform: rotate(40deg); transform-origin: 100% 0;}
+.origin15 {transform: rotate(50deg); transform-origin: 100% 0;}
+</code></pre>
+	</div>
+</div>
+<!-- sample3 -->
+	
+	
+	
+<!-- Sample4 -->
+<h4 class="pt50">Sample4</h4>
+<p>요소의 회전에 따른 기준점을 %로 설정한 예제입니다.</p>
+<div class="sample">
+	<h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+	<div class="ex">
+		<!-- ex -->
+		<div class="none">
+			<div class="well clearfix">
+				<div class="block ori">
+					<div class="origin16">origin16</div>
+				</div>
+				<div class="block ori">
+					<div class="origin17">origin17</div>
+				</div>
+				<div class="block ori">
+					<div class="origin18">origin18</div>
+				</div>
+				<div class="block ori">
+					<div class="origin19">origin19</div>
+				</div>
+				<div class="block ori">
+					<div class="origin20">origin20</div>
+				</div>
+			</div>
+		</div>
+		<!-- ex -->
+	</div>
+</div>
+
+<div class="sample">
+	<h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+	<div class="html">
+<pre class="line-numbers"><code class="language-css">.origin16 {transform: rotate(10deg); transform-origin: 0 100%; }
+.origin17 {transform: rotate(20deg); transform-origin: 0 100%; }
+.origin18 {transform: rotate(30deg); transform-origin: 0 100%; }
+.origin19 {transform: rotate(40deg); transform-origin: 0 100%; }
+.origin20 {transform: rotate(50deg); transform-origin: 0 100%; }
+</code></pre>
+	</div>
+</div>
+<!-- sample4 -->
+	
+	
+	
+<!-- Sample5 -->
+<h4 class="pt50">Sample5</h4>
+<p>요소의 회전에 따른 기준점을 %로 설정한 예제입니다.</p>
+<div class="sample">
+	<h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+	<div class="ex">
+		<!-- ex -->
+		<div class="none">
+			<div class="well clearfix">
+				<div class="block ori">
+					<div class="origin21">origin21</div>
+				</div>
+				<div class="block ori">
+					<div class="origin22">origin22</div>
+				</div>
+				<div class="block ori">
+					<div class="origin23">origin23</div>
+				</div>
+				<div class="block ori">
+					<div class="origin24">origin24</div>
+				</div>
+				<div class="block ori">
+					<div class="origin25">origin25</div>
+				</div>
+			</div>
+		</div>
+		<!-- ex -->
+	</div>
+</div>
+
+<div class="sample">
+	<h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+	<div class="html">
+<pre class="line-numbers"><code class="language-css">.origin21 {transform: rotate3d(1,0,0,60deg); transform-origin: 20% 0%;}
+.origin22 {transform: rotate3d(1,0,0,60deg); transform-origin: 20% 25%;}
+.origin23 {transform: rotate3d(1,0,0,60deg); transform-origin: 20% 50%;}
+.origin24 {transform: rotate3d(1,0,0,60deg); transform-origin: 20% 75%;}
+.origin25 {transform: rotate3d(1,0,0,60deg); transform-origin: 20% 100%;}
+</code></pre>
+	</div>
+</div>
+<!-- sample5 -->
+	
+	
+	
+<!-- Sample6 -->
+<h4 class="pt50">Sample6</h4>
+<p>요소의 회전에 따른 기준점을 %로 설정한 예제입니다.</p>
+<div class="sample">
+	<h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+	<div class="ex">
+		<!-- ex -->
+		<div class="none">
+			<div class="well clearfix">
+				<div class="block ori">
+					<div class="origin26">origin26</div>
+				</div>
+				<div class="block ori">
+					<div class="origin27">origin27</div>
+				</div>
+				<div class="block ori">
+					<div class="origin28">origin28</div>
+				</div>
+				<div class="block ori">
+					<div class="origin29">origin29</div>
+				</div>
+				<div class="block ori">
+					<div class="origin30">origin30</div>
+				</div>
+			</div>
+		</div>
+		<!-- ex -->
+	</div>
+</div>
+
+<div class="sample">
+	<h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+	<div class="html">
+<pre class="line-numbers"><code class="language-css">.origin26 {transform: rotate3d(1,0,0,-60deg); transform-origin: 20% 0%;}
+.origin27 {transform: rotate3d(1,0,0,-60deg); transform-origin: 20% 25%;}
+.origin28 {transform: rotate3d(1,0,0,-60deg); transform-origin: 20% 50%;}
+.origin29 {transform: rotate3d(1,0,0,-60deg); transform-origin: 20% 75%;}
+.origin30 {transform: rotate3d(1,0,0,-60deg); transform-origin: 20% 100%;}
+</code></pre>
+	</div>
+</div>
+<!-- sample6 -->
+	
+	
+
+	
+<!-- Sample7 -->
+<h4 class="pt50">Sample7</h4>
+<p>요소의 회전에 따른 기준점을 %로 설정한 예제입니다.</p>
+<div class="sample">
+	<h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+	<div class="ex">
+		<!-- ex -->
+		<div class="none">
+			<div class="well clearfix">
+				<div class="block ori">
+					<div class="origin31">origin31</div>
+				</div>
+				<div class="block ori">
+					<div class="origin32">origin32</div>
+				</div>
+				<div class="block ori">
+					<div class="origin33">origin33</div>
+				</div>
+				<div class="block ori">
+					<div class="origin34">origin34</div>
+				</div>
+				<div class="block ori">
+					<div class="origin35">origin35</div>
+				</div>
+			</div>
+		</div>
+		<!-- ex -->
+	</div>
+</div>
+
+<div class="sample">
+	<h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+	<div class="html">
+<pre class="line-numbers"><code class="language-css">.origin31 {transform: rotate3d(0,1,0,10deg); transform-origin:100% 100%;}
+.origin32 {transform: rotate3d(0,1,0,20deg); transform-origin:100% 100%;}
+.origin33 {transform: rotate3d(0,1,0,30deg); transform-origin:100% 100%;}
+.origin34 {transform: rotate3d(0,1,0,40deg); transform-origin:100% 100%;}
+.origin35 {transform: rotate3d(0,1,0,50deg); transform-origin:100% 100%;}
+</code></pre>
+	</div>
+</div>
+<!-- sample7 -->
+	
+	
+	
+<!-- Sample8 -->
+<h4 class="pt50">Sample8</h4>
+<p>요소의 회전에 따른 기준점을 %로 설정한 예제입니다.</p>
+<div class="sample">
+	<h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+	<div class="ex">
+		<!-- ex -->
+		<div class="none">
+			<div class="well clearfix">
+				<div class="block ori">
+					<div class="origin36">origin36</div>
+				</div>
+				<div class="block ori">
+					<div class="origin37">origin37</div>
+				</div>
+				<div class="block ori">
+					<div class="origin38">origin38</div>
+				</div>
+				<div class="block ori">
+					<div class="origin39">origin39</div>
+				</div>
+				<div class="block ori">
+					<div class="origin40">origin40</div>
+				</div>
+			</div>
+		</div>
+		<!-- ex -->
+	</div>
+</div>
+
+<div class="sample">
+	<h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+	<div class="html">
+<pre class="line-numbers"><code class="language-css">.origin36 {transform: rotate3d(0,1,0,-10deg); transform-origin:100% 100%;}
+.origin37 {transform: rotate3d(0,1,0,-20deg); transform-origin:100% 100%;}
+.origin38 {transform: rotate3d(0,1,0,-30deg); transform-origin:100% 100%;}
+.origin39 {transform: rotate3d(0,1,0,-40deg); transform-origin:100% 100%;}
+.origin40 {transform: rotate3d(0,1,0,-50deg); transform-origin:100% 100%;}
+</code></pre>
+	</div>
+</div>
+<!-- sample8 -->  
+	
+	
+	
+<!-- Sample9 -->
+<h4 class="pt50">Sample9</h4>
+<p>요소의 회전에 따른 기준점을 %로 설정한 예제입니다.</p>
+<div class="sample">
+	<h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+	<div class="ex">
+		<!-- ex -->
+		<div class="none">
+			<div class="well clearfix">
+				<div class="block ori">
+					<div class="origin41">origin41</div>
+				</div>
+				<div class="block ori">
+					<div class="origin42">origin42</div>
+				</div>
+				<div class="block ori">
+					<div class="origin43">origin43</div>
+				</div>
+				<div class="block ori">
+					<div class="origin44">origin44</div>
+				</div>
+				<div class="block ori">
+					<div class="origin45">origin45</div>
+				</div>
+			</div>
+		</div>
+		<!-- ex -->
+	</div>
+</div>
+
+<div class="sample">
+	<h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+	<div class="html">
+<pre class="line-numbers"><code class="language-css">.origin41 {transform: rotate3d(0,1,0,10deg); transform-origin:0% 0%; }
+.origin42 {transform: rotate3d(0,1,0,20deg); transform-origin:0% 0%;}
+.origin43 {transform: rotate3d(0,1,0,30deg); transform-origin:0% 0%;}
+.origin44 {transform: rotate3d(0,1,0,40deg); transform-origin:0% 0%;}
+.origin45 {transform: rotate3d(0,1,0,50deg); transform-origin:0% 0%;}
+</code></pre>
+	</div>
+</div>
+<!-- sample9 -->
+	
+	
+	
+<!-- Sample10 -->
+<h4 class="pt50">Sample10</h4>
+<p>요소의 회전에 따른 기준점을 %로 설정한 예제입니다.</p>
+<div class="sample">
+	<h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+	<div class="ex">
+		<!-- ex -->
+		<div class="none">
+			<div class="well clearfix">
+				<div class="block ori">
+					<div class="origin46">origin46</div>
+				</div>
+				<div class="block ori">
+					<div class="origin47">origin47</div>
+				</div>
+				<div class="block ori">
+					<div class="origin48">origin48</div>
+				</div>
+				<div class="block ori">
+					<div class="origin49">origin49</div>
+				</div>
+				<div class="block ori">
+					<div class="origin50">origin50</div>
+				</div>
+			</div>
+		</div>
+		<!-- ex -->
+	</div>
+</div>
+
+<div class="sample">
+	<h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+	<div class="html">
+<pre class="line-numbers"><code class="language-css">.origin46 {transform: rotate3d(0,1,0,-10deg); transform-origin:0% 0%;}
+.origin47 {transform: rotate3d(0,1,0,-20deg); transform-origin:0% 0%;}
+.origin48 {transform: rotate3d(0,1,0,-30deg); transform-origin:0% 0%;}
+.origin49 {transform: rotate3d(0,1,0,-40deg); transform-origin:0% 0%;}
+.origin50 {transform: rotate3d(0,1,0,-50deg); transform-origin:0% 0%;}
+</code></pre>
+	</div>
+</div>
+<!-- sample10 -->
+
+	
+<h4 class="pt50">호환성(Compatibility) 
+	<a href="http://webzz.tistory.com/359" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a>
+</h4>
+<div class="table-responsive">
+	<table class="table table-bordered table-striped table-hover compatibility">
+		<thead>
+			<tr>
+				<th></th>
+				<th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-chrome1.png" alt="크롬 아이콘" title="크롬 브라우저"></th>
+				<th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-firefox1.png" alt="파이어폭스 아이콘" title="파이어폭스 브라우저"></th>
+				<th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-safari1.png" alt="사파리 아이콘" title="사파리 브라우저"></th>
+				<th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-opera1.png" alt="오페라 아이콘" title="오페라 브라우저"></th>
+				<th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-whale1.png" alt="네이버 웨일" title="네이버 웨일 브라우저"></th>
+				<th scope="col"><img src="https://tistory4.daumcdn.net/tistory/2933724/skin/images/icon-ie6.png" alt="익스플로러6 아이콘" title="인터넷 익스플로러6 브라우저"><em>6</em></th>
+				<th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러7 아이콘" title="인터넷 익스플로러7 브라우저"><em>7</em></th>
+				<th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러8 아이콘" title="인터넷 익스플로러8 브라우저"><em>8</em></th>
+				<th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie9.png" alt="익스플로러9 아이콘" title="인터넷 익스플로러9 브라우저"><em>9</em></th>
+				<th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie10.png" alt="익스플로러10 아이콘" title="인터넷 익스플로러10 브라우저"><em>10</em></th>
+				<th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie11.png" alt="익스플로러11 아이콘" title="인터넷 익스플로러11 브라우저"><em>11</em></th>
+				<th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-edge.png" alt="엣지 아이콘" title="엣지 브라우저"></th>
+				<th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-android.png" alt="안드로이드 아이콘" title="모바일 안드로이드 브라우저"></th>
+				<th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ios.png" alt="ios 아이콘" title="모바일 아이폰 브라우저"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td scope="row">transform-origin</td>
+				<td><span title="사용가능합니다.">사용가능</span></td><!-- 크롬 -->
+				<td><span title="사용가능합니다.">사용가능</span></td><!-- 파이어폭스 -->
+				<td><span title="사용가능합니다.">사용가능</span></td><!-- 사파리 -->
+				<td><span title="사용가능합니다.">사용가능</span></td><!-- 오페라 -->
+				<td><span title="사용가능합니다.">사용가능</span></td><!-- 네이버 -->
+				<td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러6 -->
+				<td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러7 -->
+				<td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러8 -->
+				<td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러9 -->
+				<td><span title="사용가능합니다.">사용가능</span></td><!-- 익스플로러10 -->
+				<td><span title="사용가능합니다.">사용가능</span></td><!-- 익스플로러11 -->
+				<td><span title="사용가능합니다.">사용가능</span></td><!-- 엣지 -->
+				<td><span title="사용가능합니다.">사용가능</span></td><!-- 안드로이드 -->
+				<td><span title="사용가능합니다.">사용가능</span></td><!-- IOS -->
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+	
+	
+	
+		

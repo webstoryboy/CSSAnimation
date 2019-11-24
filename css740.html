@@ -1,0 +1,270 @@
+<style>
+
+    .block.tra1 > div {background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);transition: all 0.3s ease;}
+    .block.tra1 > div:hover {transform: none;}
+        
+    .block.sca1 > div{background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);transition: all 0.3s ease; opacity: 0.6;}
+    .block.sca1 > div:hover {transform: none;} 
+    .scale01 {transform: scale(1.1, 1.1);}
+    .scale02 {transform: scale(1.2, 1.2);}
+    .scale03 {transform: scale(1.3, 1.3);}
+    .scale04 {transform: scale(1.4, 1.4);}
+    .scale05 {transform: scale(1.5, 1.5);}
+    .scale06 {transform: scale(0.9, 0.9);}
+    .scale07 {transform: scale(0.8, 0.8);}
+    .scale08 {transform: scale(0.7, 0.7);}
+    .scale09 {transform: scale(0.6, 0.6);}
+    .scale10 {transform: scale(0.5, 0.5);}
+    .scale11 {transform: scaleX(1.1);}
+    .scale12 {transform: scaleX(1.2);}
+    .scale13 {transform: scaleX(1.3);}
+    .scale14 {transform: scaleX(1.4);}
+    .scale15 {transform: scaleX(1.5);}
+    .scale16 {transform: scaleY(1.1);}
+    .scale17 {transform: scaleY(1.2);}
+    .scale18 {transform: scaleY(1.3);}
+    .scale19 {transform: scaleY(1.4);}
+    .scale20 {transform: scaleY(1.5);}
+
+</style>    
+
+
+
+
+
+
+<h2>Scale</h2>
+<p>translate</p>
+<hr>
+
+<h3>확대(scale)</h3>
+
+
+
+
+
+<h4 class="pt50">확대(scale)</h4>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+        <colgroup>
+            <col style="width: 20%">
+            <col style="width: 30%">
+            <col style="width: 50%">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">속성값</th>
+                <th scope="col">예시</th>
+                <th scope="col">설명</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>scale(x,y)</th>
+                <td>transform: scale(2, 2);</td>
+                <td>X좌표, Y좌표 확대를 나태냅니다.</td>
+            </tr>
+            <tr>
+                <th>scale3d(x,y,z)</th>
+                <td>transform: scale3d(2, 2, 2);</td>
+                <td>X좌표, Y좌표, Z좌표 확대를 나태냅니다.</td>
+            </tr>
+            <tr>
+                <th>scaleX(x)</th>
+                <td>transform: scaleX(2);</td>
+                <td>X좌표 확대를 나태냅니다.</td>
+            </tr>
+            <tr>
+                <th>scaleY(y)</th>
+                <td>transform: scaleY(2);</td>
+                <td>Y좌표 확대를 나태냅니다.</td>
+            </tr>
+            <tr>
+                <th>scaleZ(z)</th>
+                <td>transform: scaleZ(2);</td>
+                <td>Z좌표 확대를 나태냅니다.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Sample1 -->
+<h4 class="pt50">Sample1</h4>
+<p>scale의 값을 크게 표현한 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <div class="well clearfix">
+                <div class="block sca1">
+                    <div class="scale01">scale01</div>
+                </div>
+                <div class="block sca1">
+                    <div class="scale02">scale02</div>
+                </div>
+                <div class="block sca1">
+                    <div class="scale03">scale03</div>
+                </div>
+                <div class="block sca1">
+                    <div class="scale04">scale04</div>
+                </div>
+                <div class="block sca1">
+                    <div class="scale05">scale05</div>
+                </div>
+            </div>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-css">.scale01 {transform: scale(1.1, 1.1);}
+.scale02 {transform: scale(1.2, 1.2);}
+.scale03 {transform: scale(1.3, 1.3);}
+.scale04 {transform: scale(1.4, 1.4);}
+.scale05 {transform: scale(1.5, 1.5);}
+</code></pre>
+    </div>
+</div>
+<!-- sample1 -->
+
+
+<!-- Sample2 -->
+<h4 class="pt50">Sample2</h4>
+<p>scale의 값을 작게 표현한 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <div class="well clearfix">
+                <div class="block sca1">
+                    <div class="scale06">scale06</div>
+                </div>
+                <div class="block sca1">
+                    <div class="scale07">scale07</div>
+                </div>
+                <div class="block sca1">
+                    <div class="scale08">scale08</div>
+                </div>
+                <div class="block sca1">
+                    <div class="scale09">scale09</div>
+                </div>
+                <div class="block sca1">
+                    <div class="scale10">scale10</div>
+                </div>
+            </div>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-css">.scale06 {transform: scale(0.9, 0.9);}
+.scale07 {transform: scale(0.8, 0.8);}
+.scale08 {transform: scale(0.7, 0.7);}
+.scale09 {transform: scale(0.6, 0.6);}
+.scale10 {transform: scale(0.5, 0.5);}
+</code></pre>
+    </div>
+</div>
+<!-- sample2 -->
+
+
+
+<!-- Sample3 -->
+<h4 class="pt50">Sample3</h4>
+<p>scale X축의 값을 크게 표현한 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <div class="well clearfix">
+                <div class="block sca1">
+                    <div class="scale11">scale11</div>
+                </div>
+                <div class="block sca1">
+                    <div class="scale12">scale12</div>
+                </div>
+                <div class="block sca1">
+                    <div class="scale13">scale13</div>
+                </div>
+                <div class="block sca1">
+                    <div class="scale14">scale14</div>
+                </div>
+                <div class="block sca1">
+                    <div class="scale15">scale15</div>
+                </div>
+            </div>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-css">.scale11 {transform: scaleX(1.1);}
+.scale12 {transform: scaleX(1.2);}
+.scale13 {transform: scaleX(1.3);}
+.scale14 {transform: scaleX(1.4);}
+.scale15 {transform: scaleX(1.5);}
+</code></pre>
+    </div>
+</div>
+<!-- sample3 -->
+
+
+
+
+
+<!-- Sample4 -->
+<h4 class="pt50">Sample4</h4>
+<p>scale Y축의 값을 크게 표현한 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <div class="well clearfix">
+                <div class="block sca1">
+                    <div class="scale16">scale16</div>
+                </div>
+                <div class="block sca1">
+                    <div class="scale17">scale17</div>
+                </div>
+                <div class="block sca1">
+                    <div class="scale18">scale18</div>
+                </div>
+                <div class="block sca1">
+                    <div class="scale19">scale19</div>
+                </div>
+                <div class="block sca1">
+                    <div class="scale20">scale20</div>
+                </div>
+            </div>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-css">.scale16 {transform: scaleY(1.1);}
+.scale17 {transform: scaleY(1.2);}
+.scale18 {transform: scaleY(1.3);}
+.scale19 {transform: scaleY(1.4);}
+.scale20 {transform: scaleY(1.5);}
+</code></pre>
+    </div>
+</div>
+<!-- sample4 -->
+ 
+    

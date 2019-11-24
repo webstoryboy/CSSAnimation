@@ -1,0 +1,311 @@
+<style>
+
+.block.rot1 > div {background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); transition: all 0.3s ease}
+.block.rot1 > div:hover {transform: none;}
+.rotate01 {transform: rotate(10deg);}
+.rotate02 {transform: rotate(20deg);}
+.rotate03 {transform: rotate(30deg);}
+.rotate04 {transform: rotate(40deg);}
+.rotate05 {transform: rotate(40deg);}
+.rotate06 {transform: rotateX(10deg);}
+.rotate07 {transform: rotateX(20deg);}
+.rotate08 {transform: rotateX(30deg);}
+.rotate09 {transform: rotateX(40deg);}
+.rotate10 {transform: rotateX(50deg);}
+.rotate11 {transform: rotateY(10deg);}
+.rotate12 {transform: rotateY(20deg);}
+.rotate13 {transform: rotateY(30deg);}
+.rotate14 {transform: rotateY(40deg);}
+.rotate15 {transform: rotateY(50deg);}
+.rotate16 {transform: rotateZ(10deg);}
+.rotate17 {transform: rotateZ(20deg);}
+.rotate18 {transform: rotateZ(30deg);}
+.rotate19 {transform: rotateZ(40deg);}
+.rotate20 {transform: rotateZ(50deg);}
+.rotate21 {transform: rotate3d(0,1,1,10deg);}
+.rotate22 {transform: rotate3d(0,1,1,30deg);}
+.rotate23 {transform: rotate3d(0,1,1,50deg);}
+.rotate24 {transform: rotate3d(0,1,1,70deg);}
+.rotate25 {transform: rotate3d(0,1,1,90deg);}
+    
+
+</style>    
+
+
+
+
+
+
+<h2>Rotate</h2>
+<p>translate</p>
+<hr>
+
+<h3>회전(rotate)</h3>
+
+
+<h4 class="pt50">회전(rotate)</h4>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+        <colgroup>
+            <col style="width: 20%">
+            <col style="width: 30%">
+            <col style="width: 50%">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">속성값</th>
+                <th scope="col">예시</th>
+                <th scope="col">설명</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>rotate(angle)</th>
+                <td>transform: rotate(10deg);</td>
+                <td>각도로 회전을 나타냅니다.</td>
+            </tr>
+            <tr>
+                <th>rotate3d(x,y,z,angle)</th>
+                <td>transform: rotate3d(0, 1, 0, 10deg);</td>
+                <td>X축, Y축, Z축 회전을 나타냅니다.</td>
+            </tr>
+            <tr>
+                <th>rotateX(angle)</th>
+                <td>transform: rotateX(10deg);</td>
+                <td>X축 회전을 나타냅니다</td>
+            </tr>
+            <tr>
+                <th>rotateY(angle)</th>
+                <td>transform: rotateY(10deg);</td>
+                <td>Y축 회전을 나타냅니다</td>
+            </tr>
+            <tr>
+                <th>rotateZ(angle)</th>
+                <td>transform: rotateZ(10deg);</td>
+                <td>Z축 회전을 나타냅니다</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Sample1 -->
+<h4 class="pt50">Sample1</h4>
+<p>rotate를 통한 회전 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <div class="well clearfix">
+                <div class="block rot1">
+                    <div class="rotate01">rotate01</div>
+                </div>
+                <div class="block rot1">
+                    <div class="rotate02">rotate02</div>
+                </div>
+                <div class="block rot1">
+                    <div class="rotate03">rotate03</div>
+                </div>
+                <div class="block rot1">
+                    <div class="rotate04">rotate04</div>
+                </div>
+                <div class="block rot1">
+                    <div class="rotate05">rotate05</div>
+                </div>
+            </div>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-css">.rotate01 {transform: rotate(10deg);}
+.rotate02 {transform: rotate(20deg);}
+.rotate03 {transform: rotate(30deg);}
+.rotate04 {transform: rotate(40deg);}
+.rotate05 {transform: rotate(50deg);}
+</code></pre>
+    </div>
+</div>
+<!-- sample1 -->
+
+
+
+
+<!-- Sample2 -->
+<h4 class="pt50">Sample2</h4>
+<p>rotate X축을 통한 회전 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <div class="well clearfix">
+                <div class="block rot1">
+                    <div class="rotate06">rotate06</div>
+                </div>
+                <div class="block rot1">
+                    <div class="rotate07">rotate07</div>
+                </div>
+                <div class="block rot1">
+                    <div class="rotate08">rotate08</div>
+                </div>
+                <div class="block rot1">
+                    <div class="rotate09">rotate09</div>
+                </div>
+                <div class="block rot1">
+                    <div class="rotate10">rotate10</div>
+                </div>
+            </div>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-css">.rotate06 {transform: rotateX(10deg);}
+.rotate07 {transform: rotateX(20deg);}
+.rotate08 {transform: rotateX(30deg);}
+.rotate09 {transform: rotateX(40deg);}
+.rotate10 {transform: rotateX(50deg);}
+</code></pre>
+    </div>
+</div>
+<!-- sample2 -->
+
+
+<!-- Sample3 -->
+<h4 class="pt50">Sample3</h4>
+<p>rotate Y축을 통한 회전 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <div class="well clearfix">
+                <div class="block rot1">
+                    <div class="rotate11">rotate11</div>
+                </div>
+                <div class="block rot1">
+                    <div class="rotate12">rotate12</div>
+                </div>
+                <div class="block rot1">
+                    <div class="rotate13">rotate13</div>
+                </div>
+                <div class="block rot1">
+                    <div class="rotate14">rotate14</div>
+                </div>
+                <div class="block rot1">
+                    <div class="rotate15">rotate15</div>
+                </div>
+            </div>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-css">.rotate11 {transform: rotateY(10deg);}
+.rotate12 {transform: rotateY(20deg);}
+.rotate13 {transform: rotateY(30deg);}
+.rotate14 {transform: rotateY(40deg);}
+.rotate15 {transform: rotateY(50deg);}
+</code></pre>
+    </div>
+</div>
+<!-- sample3 -->
+
+
+<!-- Sample4 -->
+<h4 class="pt50">Sample4</h4>
+<p>rotate Y축을 통한 회전 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <div class="well clearfix">
+                <div class="block rot1">
+                    <div class="rotate16">rotate16</div>
+                </div>
+                <div class="block rot1">
+                    <div class="rotate17">rotate17</div>
+                </div>
+                <div class="block rot1">
+                    <div class="rotate18">rotate18</div>
+                </div>
+                <div class="block rot1">
+                    <div class="rotate19">rotate19</div>
+                </div>
+                <div class="block rot1">
+                    <div class="rotate20">rotate20</div>
+                </div>
+            </div>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-css">.rotate16 {transform: rotateZ(10deg);}
+.rotate17 {transform: rotateZ(20deg);}
+.rotate18 {transform: rotateZ(30deg);}
+.rotate19 {transform: rotateZ(40deg);}
+.rotate20 {transform: rotateZ(50deg);}
+</code></pre>
+    </div>
+</div>
+<!-- sample4 -->
+
+
+
+<!-- Sample5 -->
+<h4 class="pt50">Sample5</h4>
+<p>rotate3D를 이용한 회전 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <div class="well clearfix">
+                <div class="block rot1">
+                    <div class="rotate21">rotate21</div>
+                </div>
+                <div class="block rot1">
+                    <div class="rotate22">rotate22</div>
+                </div>
+                <div class="block rot1">
+                    <div class="rotate23">rotate23</div>
+                </div>
+                <div class="block rot1">
+                    <div class="rotate24">rotate24</div>
+                </div>
+                <div class="block rot1">
+                    <div class="rotate25">rotate25</div>
+                </div>
+            </div>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-css">.rotate21 {transform: rotate3d(0,1,1,10deg);}
+.rotate22 {transform: rotate3d(0,1,1,30deg);}
+.rotate23 {transform: rotate3d(0,1,1,50deg);}
+.rotate24 {transform: rotate3d(0,1,1,70deg);}
+.rotate25 {transform: rotate3d(0,1,1,90deg);}
+</code></pre>
+    </div>
+</div>
+<!-- sample5 -->
